@@ -77,17 +77,14 @@ function Homepage() {
                     loading="lazy"
                     className='md:h-64 w-full object-cover'
                 />}
-                    {/*  
-                    <img 
-                     src='https://images.pexels.com/photos/9447551/pexels-photo-9447551.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' 
-                     alt='' /> */}
+                
 
                 <div className='p-4'>
                 <p className='text-sm leading-relaxed'>By {story.name} &middot; 
                      {format(new Date(story.publishedAt), "dd MMMM yyyy")}
                 </p>
                  <h2 className='card-title text-xl my-2 text-slate-600'>{story.title}</h2>
-                 {/* <p className='text-sm text-slate-500'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> */}
+                 
                  <p className='text-sm leading-relaxed'>
                     {`${story.body[0].children[0].text.substring(0, 110)}...`}
                 </p>
